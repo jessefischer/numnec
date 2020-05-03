@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Number Necklace Generator">
+	<meta name="author" content="Jesse Fischer">
+	<script src="numnec.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link href='numnec.css' rel="stylesheet" >
+</head>
+<body>
+	
+<main>
+<h1>Number Necklace Generator v1.2</h1>
+
+<p>A number necklace is a generalized Fibonacci-style sequence modulo <em>n</em>. All are periodic.<br>
+This tool will calculate all distinct number necklaces for a given modulus and display them, along with their period lengths, in increasing order of period.</p>
+
+<form id='num-nec-form' action="javascript:void(0)">
+<input type='text' id='base' name='base' autofocus placeholder='Modulus'>
+<input type='submit' id='compute' name='compute' value='Compute'>
+</form>
+
+<div id='results'></div>
+
+</main>
+
+<footer>
+All code by JAF, with &lt;3 for RAF.
+</footer>
+
+</body>
+</html>

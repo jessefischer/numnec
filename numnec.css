@@ -1,0 +1,114 @@
+body {
+	margin: 15px;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	background-color: #f8f8f8;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 2.75em;
+	text-align: center;
+}
+
+form {
+	text-align: center;
+	vertical-align: middle;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+input {
+	font-family: "Open Sans", "Helvetica", sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+}
+
+input[type='text'] {
+	text-align: right;
+	width: 5em;
+	font-weight: 300;
+	color: #aaaaaa;
+}
+
+input[type='submit'] {
+	border: 1px #888888 solid;
+	border-radius: 5px;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 6px;
+	margin: 10px;
+	color: #333333;
+	background-color: #dddddd;
+}
+
+table {
+	margin: 25px auto;
+	background-color: #ddd;
+	border-collapse: collapse;
+	max-width: 80%;
+}
+
+
+tr:nth-child(even) {
+	background-color: #ccc;
+}
+
+th {
+	font-family: "Open Sans", "Helvetica", sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	padding: 10px;
+}
+
+td {
+	position: relative;
+	text-align: center;
+	padding: 10px;
+
+}
+
+tr:last-child, tr:first-child {
+	background-color: #aaa;
+}
+
+tr:last-child td {
+	text-align: left;
+	font-size: 0.75em;
+}
+
+span.bead-wrapper {
+	display: inline-block;
+	position: relative;
+	top: -1em;
+	border-bottom: 1px #333333 solid;
+	padding: 2px 5px;
+	z-index: 1;
+}
+
+span.bead {
+	display: inline-block;
+	position: relative;
+	top: 1em;
+	padding: 2px 5px;
+	background-color: #aaaaaa;
+	border: 1px #333333 solid;
+	z-index: 2;
+}
+
+p {
+	text-align: center;
+}
+
+footer {
+	padding: 15px 0;
+	text-align: center;
+	font-size: 0.75em;
+}
+
+
