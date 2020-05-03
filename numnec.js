@@ -51,11 +51,24 @@ function allNecklaces( base ) {
   	return { necklaces: necklaces, lengths: lengths };
 }
 
-// Override the default toString method on arrays to output custom HTML.
+// Override the default toString method on arrays to output custom HTML. 1234567890
 Array.prototype.toString = function() {
     var s = '';
+    let digitColors = {
+        0: '#aaaaaa',
+        1: '#5a6f9c',
+        2: '#75a1ff',
+        3: '#44ab82',
+        4: '#cca1a1',
+        5: '#a5d1a5',
+        6: '#dbdba2',
+        7: '#a44ecc',
+        8: '#a3a3a3',
+        9: '#c2a44a'
+    };
     for ( var i = 0; i < this.length; i++ ) {
-        s += "<span class='bead-wrapper'><span class='bead'>" + this[i] + "</span></span>";
+        let beadColor = digitColors[ this[i] % 10 ];
+        s += "<span class='bead-wrapper'><span class='bead' style='background-color: " + beadColor + "'>" + this[i] + "</span></span>";
     }
     return s;
 }

@@ -99,6 +99,7 @@ span.bead {
 	background-color: #aaaaaa;
 	border: 1px #333333 solid;
 	z-index: 2;
+	border-radius: 50%;
 }
 
 p {
